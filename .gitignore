@@ -1,0 +1,18 @@
+# Flutter & Dart
+.dart_tool/
+.build/
+android/.gradle/
+android/app/debug/
+android/app/release/
+*.iml
+.pub-cache/
+packages/
+
+# Flutter build outputs
+build/
+flutter_assets/
+pubspec.lock
+
+# IDE files
+.idea/
+.vscode/
