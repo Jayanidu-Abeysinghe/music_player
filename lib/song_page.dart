@@ -82,3 +82,119 @@ class _SongPageState extends State<SongPage> {
                                  ),
                                ),
 
+
+                               const SizedBox(height: 6,
+                               ),
+
+
+                               const Text(
+                                'Birdie',
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 22,
+                                  ),
+                                 ),
+                              ],
+                            ),
+                        
+                            const Icon(
+                              Icons.favorite,
+                              color: Colors.red,
+                              size: 32,
+                              ),
+
+
+
+                        
+                        
+                          ],
+                        ),
+                      )
+                  ],
+                ),
+              ),
+
+
+              const SizedBox(height: 30),
+
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: const [
+
+                Text('0.00'),
+                Icon(Icons.shuffle),
+                Icon(Icons.repeat),
+                Text('4.22'),
+              ],
+            ),
+
+
+            const SizedBox(height: 30),
+
+            //linear bar
+
+            NewBox(
+              child: LinearProgressIndicator(
+                minHeight: 10,
+                value: 0.40,
+                valueColor: AlwaysStoppedAnimation<Color>(Colors.green),
+                backgroundColor: Colors.transparent,
+              ),
+            ),
+
+
+             const SizedBox(height: 30),
+
+
+
+            //previous song, pause play, skip next song 
+
+            SizedBox(
+              height: 60,
+              child: Row(
+                children: const [
+                  Expanded(
+                    child: NewBox(
+                      child: Icon(
+                        Icons.skip_previous,
+                        size: 32,
+                        )),
+                  ),
+              
+              
+                  Expanded(
+                    flex: 2,
+                    child: Padding(
+                      padding: EdgeInsets.symmetric(horizontal: 20.0),
+                      child: NewBox(
+                        child: Icon(
+                          Icons.play_arrow,
+                          size: 32,
+                          )),
+                    ),
+                  ),
+
+
+                  Expanded(
+                    child: NewBox(
+                      child: Icon(
+                        Icons.skip_next,
+                        size: 32,
+                        )),
+                  ),
+              
+               ],
+              ),
+            )
+
+
+            ],
+          ),
+        ),
+      ),
+
+
+
+    );
+  }
+}

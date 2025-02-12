@@ -4,6 +4,8 @@ class NewBox extends StatelessWidget {
   final child;
   const NewBox({Key? key, required this.child}) : super(key: key);
 
+
+  
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -17,7 +19,7 @@ class NewBox extends StatelessWidget {
 
               //darker shadow on the bottom right
 
-              BoxShadow(
+   BoxShadow(
                 color: Colors.grey.shade500,
                 blurRadius: 15,
                 offset: Offset(5,5),
@@ -35,4 +37,5 @@ class NewBox extends StatelessWidget {
         );
   }
 }
+
 
