@@ -22,14 +22,13 @@ A cross-platform music player built with **Flutter**, supporting Android, iOS, W
 
 ---
 
-🤝 Contributing
+## 🤝 **Contributing**
 Contributions, issues, and feature requests are welcome!
 Feel free to fork this repo and submit a pull request.
 
-👤 Author
+---
+
+## 👤 **Author**
 Developed with ❤️ by Jayanidu Abeysinghe
 GitHub: @Jayanidu-Abeysinghe
 
-yaml
-Copy
-Edit
